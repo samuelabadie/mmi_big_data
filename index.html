@@ -6,6 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                test: '#da373d',
+                red1: '#FF465E',
+                red2: '#FF4344',
+                orange1: '#FFD17B',
+                orange2: '#FF865C',
+                blue1: '#685CFF',
+                blue2: '#2BA8FF',
+                green1: '#1BDD97',
+                green2: '#36FAEE'
+              },
+              dropShadow: {
+                'xs': '0px 0px 4px rgba(43, 255, 176, 1)',
+                '4xl': [
+                    '0 35px 35px rgba(0, 0, 0, 0.25)',
+                    '0 45px 65px rgba(0, 0, 0, 0.15)'
+                ]
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body class="bg-[#030225]">
     <div class="w-full h-auto flex justify-center my-16">
@@ -18,19 +44,19 @@
             <div class="w-1/2">
                 <div class="flex flex-col w-3/6">
                     <h2 class="text-3xl text-white">Les entreprises on-t-elles un site internet ? </h2>
-                    <span class="h-2 w-24 bg-green-400"></span>
+                    <span class="h-2 w-40 bg-gradient-to-r from-green1 to-green2 mt-4 drop-shadow-xs"></span>
                 </div>  
                 <div class="my-12 flex flex-col gap-y-1">
                     <div class="flex items-center">
-                        <span class="h-4 w-4 bg-blue-500 mr-4"></span>
+                        <span class="h-4 w-4 bg-gradient-to-t from-blue1 to-blue2 mr-4"></span>
                         <span class="text-white">J'ai un site web</span>
                     </div>
                     <div class="flex items-center">
-                        <span class="h-4 w-4 bg-orange-500 mr-4"></span>
+                        <span class="h-4 w-4 bg-gradient-to-t from-orange1 to-orange2 mr-4"></span>
                         <span class="text-white">Je n’en ai pas mais je compte en avoir un dans les 12 prochains mois.</span>
                     </div>
                     <div class="flex items-center">
-                        <span class="h-4 w-4 bg-red-500 mr-4"></span>
+                        <span class="h-4 w-4 bg-gradient-to-t from-red1 to-red2 mr-4"></span>
                         <span class="text-white">Je n’en ai pas et ne compte pas en faire.</span>
                     </div>
                 </div>
@@ -40,6 +66,51 @@
             </div>
 
             <div class="w-1/2 flex flex-col items-end justify-center gap-y-12">
+                <div class="w-5/6 h-auto">
+                    <p class="text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia tincidunt tempus. Ut dictum placerat augue et tincidunt. Sed tempor turpis id iaculis suscipit. Morbi commodo, dolor vel lacinia iaculis, ex tortor ullamcorper lorem, ac hendrerit lectus leo eget dolor. Suspendisse quis metus convallis, dignissim mauris id, tincidunt erat. Aliquam interdum volutpat enim ac rhoncus. Nullam ac felis scelerisque, consectetur purus nec, sagittis quam. Mauris iaculis id nisl quis blandit.
+                    </p>
+                </div>
+                <div class="w-5/6 h-auto">
+                    <p class="text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia tincidunt tempus. Ut dictum placerat augue et tincidunt. Sed tempor turpis id iaculis suscipit. Morbi commodo, dolor vel lacinia iaculis, ex tortor ullamcorper lorem, ac hendrerit lectus leo eget dolor. Suspendisse quis metus convallis, dignissim mauris id, tincidunt erat. Aliquam interdum volutpat enim ac rhoncus. Nullam ac felis scelerisque, consectetur purus nec, sagittis quam. Mauris iaculis id nisl quis blandit.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class=" w-full h-auto flex justify-center mt-32 mb-32">
+        <div class="w-4/6 flex flex-col">
+
+            <div class="w-full">
+                <div class="flex flex-col w-2/6">
+                    <h2 class="text-3xl text-white">Quels sont les secteurs les plus digitalisés ?</h2>
+                    <span class="h-2 w-40 bg-gradient-to-r from-green1 to-green2 mt-4 drop-shadow-xs"></span>
+                </div>  
+                <div class="my-12 flex flex-col gap-y-1">
+                    <div class="flex items-center">
+                        <span class="h-4 w-4 bg-gradient-to-t from-blue1 to-blue2 mr-4"></span>
+                        <span class="text-white">J'ai un site web</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="h-4 w-4 bg-gradient-to-t from-orange1 to-orange2 mr-4"></span>
+                        <span class="text-white">Je n’en ai pas mais je compte en avoir un dans les 12 prochains mois.</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="h-4 w-4 bg-gradient-to-t from-red1 to-red2 mr-4"></span>
+                        <span class="text-white">Je n’en ai pas et ne compte pas en faire.</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="/svgs/graph_sam_2.svg" alt="Logo de Safe'N'Tech">
+                </div>
+            </div>
+
+            <div class="w-auto flex items-center gap-x-12 mt-12">
                 <div class="w-5/6 h-auto">
                     <p class="text-white">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia tincidunt tempus. Ut dictum placerat augue et tincidunt. Sed tempor turpis id iaculis suscipit. Morbi commodo, dolor vel lacinia iaculis, ex tortor ullamcorper lorem, ac hendrerit lectus leo eget dolor. Suspendisse quis metus convallis, dignissim mauris id, tincidunt erat. Aliquam interdum volutpat enim ac rhoncus. Nullam ac felis scelerisque, consectetur purus nec, sagittis quam. Mauris iaculis id nisl quis blandit.
