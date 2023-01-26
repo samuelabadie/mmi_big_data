@@ -3,7 +3,7 @@
   <head>
     <title>Area Spline Chart | JSCharting</title>
     <meta http-equiv="content-type" content="text-html; charset=utf-8" />
-
+    <script src="https://code.jscharting.com/latest/jscharting.js"></script>
     <script type="text/javascript" src="../jsc/jscharting.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/default.css" />
@@ -23,57 +23,27 @@ Learn how to:
       var chart = JSC.chart('chartDiv', {
         debug: true,
         legend_position: 'bottom right',
-        type: 'area spline',
+        type: 'areaSpline',
         defaultSeries: { shape_opacity: 0.5 },
         xAxis: {
           crosshair_enabled: true,
           scale: { type: 'time' }
         },
-        title_label_text: 'Costs (Last 6 Months)',
+        title_label_text: "Chiffre d'affaire du E-commerce en France",
         yAxis: { formatString: 'c' },
         series: [
           {
-            name: 'Purchases',
+            name: 'Paiement en ligne',
             points: [
-              ['1/1/2020', 29.9],
-              ['2/1/2020', 97.5],
-              ['3/1/2020', 110.4],
-              ['4/1/2020', 129.2],
-              ['5/1/2020', 144.0],
-              ['6/1/2020', 176.0]
-            ]
-          },
-          {
-            name: 'Taxes',
-            points: [
-              ['1/1/2020', 86.9],
-              ['2/1/2020', 79.5],
-              ['3/1/2020', 95.4],
-              ['4/1/2020', 97.2],
-              ['5/1/2020', 123.0],
-              ['6/1/2020', 111.0]
-            ]
-          },
-          {
-            name: 'Supplies',
-            points: [
-              ['1/1/2020', 129.9],
-              ['2/1/2020', 111.5],
-              ['3/1/2020', 66.4],
-              ['4/1/2020', 29.2],
-              ['5/1/2020', 88.0],
-              ['6/1/2020', 102.0]
-            ]
-          },
-          {
-            name: 'Rent',
-            points: [
-              ['1/1/2020', 56.9],
-              ['2/1/2020', 56.5],
-              ['3/1/2020', 56.4],
-              ['4/1/2020', 56.2],
-              ['5/1/2020', 75.0],
-              ['6/1/2020', 56.0]
+              ['1/1/2014', 55000000000],
+              ['1/1/2015', 62900000000],
+              ['1/1/2016', 71500000000],
+              ['1/1/2017', 81700000000],
+              ['1/1/2018', 92600000000],
+              ['1/1/2019', 103400000000],
+              ['1/1/2020', 112200000000],
+              ['1/1/2021', 129400000000],
+              ['1/1/2022', 145400000000]
             ]
           }
         ]
