@@ -20,34 +20,57 @@ Learn how to:
   - Draw area spline chart.
 */
       // JS
+fetch('csvjson.json')
+.then(reponse => reponse.json())
+.then(data => RecordData1(data))
+.catch(error => console.log(error));
+
+function RecordData1(data){
+
+console.log(data[0]["Année"])
+}
+
+function RecordData1(data){
       var chart = JSC.chart('chartDiv', {
         debug: true,
         legend_position: 'bottom right',
-        type: 'areaSpline',
+        type: 'area spline',
         defaultSeries: { shape_opacity: 0.5 },
         xAxis: {
           crosshair_enabled: true,
           scale: { type: 'time' }
         },
-        title_label_text: "Chiffre d'affaire du E-commerce en France",
+        title_label_text: 'Costs (Last 6 Months)',
         yAxis: { formatString: 'c' },
         series: [
           {
-            name: 'Paiement en ligne',
+            name: 'Purchases',
             points: [
-              ['1/1/2014', 55000000000],
+           ['1/1/2014', 14,36],
               ['1/1/2015', 62900000000],
               ['1/1/2016', 71500000000],
               ['1/1/2017', 81700000000],
               ['1/1/2018', 92600000000],
               ['1/1/2019', 103400000000],
-              ['1/1/2020', 112200000000],
-              ['1/1/2021', 129400000000],
-              ['1/1/2022', 145400000000]
+              ['1/1/2020', 112200000000]
             ]
-          }
+          },
+          {
+            name: 'Taxes',
+            points: [
+            ['1/1/2014', 55000000000],
+              ['1/1/2015', 62900000000],
+              ['1/1/2016', 71500000000],
+              ['1/1/2017', 81700000000],
+              ['1/1/2018', 92600000000],
+              ['1/1/2019', 103400000000],
+              ['1/1/2020', 112200000000]
+
+            ]
+          },
         ]
       });
+    }
     </script>
   </body>
 </html>

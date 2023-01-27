@@ -1,0 +1,44 @@
+[
+  {
+    "Id": "1",
+    "Année": "1/1/2015",
+    "Evolution du CA du e-commerce": "14,36",
+    "Personne n'ayant pas accès internet": "97,85"
+  },
+  {
+    "Id": "2",
+    "Année": "1/1/2016",
+    "Evolution du CA du e-commerce": "30,00",
+    "Personne n'ayant pas accès internet": "96,77"
+  },
+  {
+    "Id": "3",
+    "Année": "1/1/2017",
+    "Evolution du CA du e-commerce": "48,55",
+    "Personne n'ayant pas accès internet": "95,70"
+  },
+  {
+    "Id": "4",
+    "Année": "1/1/2018",
+    "Evolution du CA du e-commerce": "68,36",
+    "Personne n'ayant pas accès internet": "92,47"
+  },
+  {
+    "Id": "5",
+    "Année": "1/1/2019",
+    "Evolution du CA du e-commerce": "88,00",
+    "Personne n'ayant pas accès internet": "92,47"
+  },
+  {
+    "Id": "6",
+    "Année": "1/1/2020",
+    "Evolution du CA du e-commerce": "104,00",
+    "Personne n'ayant pas accès internet": "88,17"
+  },
+  {
+    "Id": "7",
+    "Année": "1/1/2021",
+    "Evolution du CA du e-commerce": "135,27",
+    "Personne n'ayant pas accès internet": "87,10"
+  }
+]
