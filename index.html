@@ -5,31 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jscharting.com/latest/jscharting.js"></script>
+    <script type="text/javascript" src="../jsc/jscharting.js"></script>
     <title>Document</title>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                test: '#da373d',
-                red1: '#FF465E',
-                red2: '#FF4344',
-                orange1: '#FFD17B',
-                orange2: '#FF865C',
-                blue1: '#685CFF',
-                blue2: '#2BA8FF',
-                green1: '#1BDD97',
-                green2: '#36FAEE'
-              },
-              dropShadow: {
-                'xs': '0px 0px 4px rgba(43, 255, 176, 1)',
-                '4xl': [
-                    '0 35px 35px rgba(0, 0, 0, 0.25)',
-                    '0 45px 65px rgba(0, 0, 0, 0.15)'
-                ]
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        test: '#da373d',
+                        red1: '#FF465E',
+                        red2: '#FF4344',
+                        orange1: '#FFD17B',
+                        orange2: '#FF865C',
+                        blue1: '#685CFF',
+                        blue2: '#2BA8FF',
+                        green1: '#1BDD97',
+                        green2: '#36FAEE'
+                    },
+                    dropShadow: {
+                        'xs': '0px 0px 4px rgba(43, 255, 176, 1)',
+                        '4xl': [
+                        '0 35px 35px rgba(0, 0, 0, 0.25)',
+                        '0 45px 65px rgba(0, 0, 0, 0.15)'
+                        ]
+                    }
+                }
             }
-          }
         }
     </script>
 </head>
@@ -37,10 +39,10 @@
     <div class="w-full h-auto flex justify-center my-16">
         <h1 class="text-white text-5xl">Ressenti des entrepreneurs sur la digitalisation de leurs activités</h1>
     </div>
-
+    
     <div class=" w-full h-auto flex justify-center">
         <div class="w-4/6 flex">
-
+            
             <div class="w-1/2">
                 <div class="flex flex-col w-3/6">
                     <h2 class="text-3xl text-white">Les entreprises on-t-elles un site internet ? </h2>
@@ -64,166 +66,242 @@
                     <img src="./svgs/graph_sam_1.svg" alt="Logo de Safe'N'Tech">
                 </div>
             </div>
-
+            
             <div class="w-1/2 rounded-xl h-auto flex flex-col items-center justify-between gap-y-12 py-16">
                 <div class="w-5/6 h-auto">
                     <p class="text-white/60">
                         Aujourd’hui nous savons que la présence sur internet est un sujet majeur pour beaucoup d’entreprises. Si on s’intéresse à l’utilisateur, on constate que son moyen le plus utilisé pour trouver une réponse à son besoin est d’utiliser une barre de recherche sur un navigateur, à partir de là on sait que c’est primordial d’exister sur internet pour trouver des clients.
-                </div>
-                <div class="w-5/6 h-auto">
-                    <p class="text-white/60">
-                        Les graphiques suivants sont tirés des résultats d’une étude qui à été faite sur 4500 entreprises concertant leur présence ou non sur internet en 2021. Presque 80% des entreprises sont conscientes de l’enjeu de leur présence sur internet. Encore un peu plus de 20% d’entre elles ne le sont pas ou ne ressentent pas le besoin d’avoir un site web. Mais voyons quels secteurs d’activité cela concerne (voir graphique ci-dessous)                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-    <div class=" w-full h-auto flex justify-center mt-32 mb-32">
-        <div class="w-4/6 flex flex-col">
-
-            <div class="w-full">
-                <div class="flex flex-col w-2/6">
-                    <h2 class="text-3xl text-white">Quels sont les secteurs les plus digitalisés ?</h2>
-                    <span class="h-2 w-40 bg-gradient-to-r from-green1 to-green2 mt-4 drop-shadow-xs"></span>
-                </div>
-                <div class="my-12 flex flex-col gap-y-1">
-                    <div class="flex items-center">
-                        <span class="h-4 w-4 bg-gradient-to-t from-blue1 to-blue2 mr-4"></span>
-                        <span class="text-white">J'ai un site web</span>
                     </div>
-                    <div class="flex items-center">
-                        <span class="h-4 w-4 bg-gradient-to-t from-orange1 to-orange2 mr-4"></span>
-                        <span class="text-white">Je n’en ai pas mais je compte en avoir un dans les 12 prochains mois.</span>
+                    <div class="w-5/6 h-auto">
+                        <p class="text-white/60">
+                            Les graphiques suivants sont tirés des résultats d’une étude qui à été faite sur 4500 entreprises concertant leur présence ou non sur internet en 2021. Presque 80% des entreprises sont conscientes de l’enjeu de leur présence sur internet. Encore un peu plus de 20% d’entre elles ne le sont pas ou ne ressentent pas le besoin d’avoir un site web. Mais voyons quels secteurs d’activité cela concerne (voir graphique ci-dessous)                    </p>
+                        </div>
                     </div>
-                    <div class="flex items-center">
-                        <span class="h-4 w-4 bg-gradient-to-t from-red1 to-red2 mr-4"></span>
-                        <span class="text-white">Je n’en ai pas et ne compte pas en faire.</span>
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class=" w-full h-auto flex justify-center mt-32 mb-32">
+                <div class="w-4/6 flex flex-col">
+                    
+                    <div class="w-full">
+                        <div class="flex flex-col w-2/6">
+                            <h2 class="text-3xl text-white">Quels sont les secteurs les plus digitalisés ?</h2>
+                            <span class="h-2 w-40 bg-gradient-to-r from-green1 to-green2 mt-4 drop-shadow-xs"></span>
+                        </div>
+                        <div class="my-12 flex flex-col gap-y-1">
+                            <div class="flex items-center">
+                                <span class="h-4 w-4 bg-gradient-to-t from-blue1 to-blue2 mr-4"></span>
+                                <span class="text-white">J'ai un site web</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="h-4 w-4 bg-gradient-to-t from-orange1 to-orange2 mr-4"></span>
+                                <span class="text-white">Je n’en ai pas mais je compte en avoir un dans les 12 prochains mois.</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="h-4 w-4 bg-gradient-to-t from-red1 to-red2 mr-4"></span>
+                                <span class="text-white">Je n’en ai pas et ne compte pas en faire.</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./svgs/graph_sam_2.svg" alt="Logo de Safe'N'Tech">
+                        </div>
+                    </div>
+                    
+                    <div class="w-auto flex items-center gap-x-12 mt-12">
+                        <div class="w-5/6 h-auto">
+                            <p class="text-white/60">
+                                Les graphiques suivants sont tirés des résultats d’une étude qui à été faite sur 4500 entreprises concertant leur présence ou non sur internet en 2021. Presque 80% des entreprises sont conscientes de l’enjeu de leur présence sur internet. Encore un peu plus de 20% d’entre elles ne le sont pas ou ne ressentent pas le besoin d’avoir un site web. Mais voyons quels secteurs d’activité cela concerne (voir graphique ci-dessous)
+                            </p>
+                        </div>
+                        <div class="w-5/6 h-auto">
+                            <p class="text-white/60">
+                                Les graphiques suivants sont tirés des résultats d’une étude qui à été faite sur 4500 entreprises concertant leur présence ou non sur internet en 2021. Presque 80% des entreprises sont conscientes de l’enjeu de leur présence sur internet. Encore un peu plus de 20% d’entre elles ne le sont pas ou ne ressentent pas le besoin d’avoir un site web. Mais voyons quels secteurs d’activité cela concerne (voir graphique ci-dessous)                    </p>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-                <div>
-                    <img src="./svgs/graph_sam_2.svg" alt="Logo de Safe'N'Tech">
-                </div>
-            </div>
-
-            <div class="w-auto flex items-center gap-x-12 mt-12">
-                <div class="w-5/6 h-auto">
-                    <p class="text-white/60">
-                        Les graphiques suivants sont tirés des résultats d’une étude qui à été faite sur 4500 entreprises concertant leur présence ou non sur internet en 2021. Presque 80% des entreprises sont conscientes de l’enjeu de leur présence sur internet. Encore un peu plus de 20% d’entre elles ne le sont pas ou ne ressentent pas le besoin d’avoir un site web. Mais voyons quels secteurs d’activité cela concerne (voir graphique ci-dessous)
-                    </p>
-                </div>
-                <div class="w-5/6 h-auto">
-                    <p class="text-white/60">
-                        Les graphiques suivants sont tirés des résultats d’une étude qui à été faite sur 4500 entreprises concertant leur présence ou non sur internet en 2021. Presque 80% des entreprises sont conscientes de l’enjeu de leur présence sur internet. Encore un peu plus de 20% d’entre elles ne le sont pas ou ne ressentent pas le besoin d’avoir un site web. Mais voyons quels secteurs d’activité cela concerne (voir graphique ci-dessous)                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-    <div class=" w-full h-auto flex justify-center">
-        <div class="w-4/6 flex">
-            <div class="w-1/2 rounded-xl h-auto flex flex-col items-start justify-between gap-y-6 py-16">
-
-                <div class="flex flex-col w-3/6">
-                    <h2 class="text-3xl text-white">Le numérique permet-il de gagner de l’argent pour les entreprise en 2021 ?  </h2>
-                    <span class="h-2 w-40 bg-gradient-to-r from-green1 to-green2 mt-4 drop-shadow-xs"></span>
-                </div>
-
-            <div class="w-5/6 h-auto">
-                <p class="text-white/60">
-                  Il est devenu essentiel pour toute entreprise d'être présente en ligne. Un site internet vous permet de vous connecter avec vos clients potentiels, de les informer sur vos produits ou services, et de les inciter à acheter chez vous.
-                  Un site web vous permet également d'élargir votre portée en atteignant des clients à l'étranger. En effet, grâce à internet, vous pouvez atteindre des personnes à travers le monde.
-                </p>
-            </div>
-            <div class="w-5/6 h-auto">
-                <p class="text-white/60">
-                  Il est un constat alarmant qu’une grande majorité d'entreprises n’est pas suffisamment éduquée sur l'importance d’une présence en ligne. Alors que le monde des affaires est de plus en plus axé sur internet.
-            </div>
-            <div class="w-5/6 h-auto">
-                <p class="text-white/60">
-                  D'après une étude faite par data.gouv qui pose la question “Le numérique me permet de gagner de l’argent”. Nous constatons que 63% des entrepreneurs français interrogés ne pensent pas gagner de l'argent avec internet ou n’ont pas d’avis sur le sujet.
-            </div>
-            <div class="w-5/6 h-auto">
-                <p class="text-white/60">
-                  En somme, il est important de reconnaître que les entreprises sont souvent sous-éduquées sur l'importance de la présence en ligne et leur croissance à long terme.            </div>
-        </div>
-
-            <div class="w-1/2 mt-40">
-                <div>
-                    <img src="./svgs/tableau_argent.svg" alt="Logoaregent">
-                    <img src="./svgs/tableau_non.svg" alt="Logoaregent">
-                    <img src="./svgs/tableau_ouinon.svg" alt="Logoaregent">
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-
-
-
-
-
-    <div class=" w-full h-auto flex justify-center">
-
-
-        <div class="w-1/2 py-16 flex flex-col items-center">
-            <p class="text-white w-4/6 mt-8">
-                Nombre d’entreprises en valeur et par secteur ayant répondu que le web n’est pas pertinent avec leur métier 
-            </p>
-            <div class="w-5/6">
-                <img class="mt-8" src="/svgs/graph3frank.svg" alt="">
-            </div>
-            <p class="text-white w-4/6 mt-32">
-                Proportion en valeur des entreprises des secteurs “commerce, hébergement restauration, services spécialisés techniques (architectes, immobiliers...), nouvelles technologies - info - comm” pensant que leur site web a un bénéfice pour leur activité ou non.
-            </p>
-            <div class="w-4/6">
-                <img class="mt-16 w-96 h-auto" src="/svgs/graph2france.svg" alt="">
-            </div>
-        </div>
-        <div class="w-1/2 flex">
-            <div class="w-4/6 rounded-xl h-auto flex flex-col items-start gap-y-6 py-16">
-
-                <div class="flex flex-col w-5/6">
-                    <h2 class="text-3xl text-white">Les freins à la digitalisation, toujours fondés ? </h2>
-                    <span class="h-2 w-40 bg-gradient-to-r from-green1 to-green2 mt-4 drop-shadow-xs"></span>
-                </div>
-
-            <div class="w-6/6 h-auto">
-                <p class="text-white/60">
-                    Nous nous intéressons ici aux freins qui empêchent les entreprises de passer le pas du numérique en nous questionnant sur le bien fondé de ces derniers.
-                    Lorsqu’on se réfère au « Baromètre France Num. 2021 », nous nous apercevons que les freins principaux pour plus de la moitié des 881 interrogés (454) concernent l’impertinence du web avec leur secteur d’activité.
-                    La statistique devient intéressante en regardant de plus près leurs secteurs d’activité et en rassemblant certains d’entre eux qui semblent instinctivement avoir des concurrent avec une présence en ligne.
-                    On se rend alors compte que plus d’un cinquième des entreprises qui ne jugent pas pertinent leur évolution numériques sont pourtant dans les secteur suivants : commerce, hébergement restauration, services spécialisés techniques (architectes, immobiliers...), nouvelles technologies - info - comm.
-
-                </p>
-            </div>
-            <br>
-            <br>
-            <div class="w-5/6 h-auto mt-40">
-                <p class="text-white/60">
-                    Notre instinct se confirme lorsque pour les entreprises des mêmes secteurs d’activité, on se réfère à la question des bienfaits d’internet. Sur 1107 réponses, 95% sont d’accord ou plutôt d’accord sur l’apport de bénéfices globaux à leurs organisations.
-
-                    Ce traitement de données confirme un peu plus une sensation bien installée depuis de nombreuses années. Énormément d’acteurs sont réticent à la transition numérique par méconnaissance de ce que cette dernière peut leur apporter: une image de marque développée, une communication plus rapide et efficace, un élargissement du marché potentiel ne se bridant pas à sa situation géographique.
-            </div>
-
-        </div>
-    </div>
-</body>
-</html>
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class=" w-full h-auto flex justify-center">
+                    <div class="w-4/6 flex">
+                        <div class="w-1/2 rounded-xl h-auto flex flex-col items-start justify-between gap-y-6 py-16">
+                            
+                            <div class="flex flex-col w-3/6">
+                                <h2 class="text-3xl text-white">Le numérique permet-il de gagner de l’argent pour les entreprise en 2021 ?  </h2>
+                                <span class="h-2 w-40 bg-gradient-to-r from-green1 to-green2 mt-4 drop-shadow-xs"></span>
+                            </div>
+                            
+                            <div class="w-5/6 h-auto">
+                                <p class="text-white/60">
+                                    Il est devenu essentiel pour toute entreprise d'être présente en ligne. Un site internet vous permet de vous connecter avec vos clients potentiels, de les informer sur vos produits ou services, et de les inciter à acheter chez vous.
+                                    Un site web vous permet également d'élargir votre portée en atteignant des clients à l'étranger. En effet, grâce à internet, vous pouvez atteindre des personnes à travers le monde.
+                                </p>
+                            </div>
+                            <div class="w-5/6 h-auto">
+                                <p class="text-white/60">
+                                    Il est un constat alarmant qu’une grande majorité d'entreprises n’est pas suffisamment éduquée sur l'importance d’une présence en ligne. Alors que le monde des affaires est de plus en plus axé sur internet.
+                                </div>
+                                <div class="w-5/6 h-auto">
+                                    <p class="text-white/60">
+                                        D'après une étude faite par data.gouv qui pose la question “Le numérique me permet de gagner de l’argent”. Nous constatons que 63% des entrepreneurs français interrogés ne pensent pas gagner de l'argent avec internet ou n’ont pas d’avis sur le sujet.
+                                    </div>
+                                    <div class="w-5/6 h-auto">
+                                        <p class="text-white/60">
+                                            En mettant votre souris au-dessus de chaque bar du graphique vous remarquerez que les secteurs d’activité le plus défavorable sur l'impact d'une présence en ligne est celui de l’industrie et le service a la personne. Ce qui est assez étonnant sachant que de nos jours 82% des Français font des recherches en ligne pour un produit ou un service. 
+                                        </br></br>En somme, il est important de reconnaître que les entreprises sont souvent sous-éduquées sur l'importance de la présence en ligne et leur croissance à long terme.            </div>
+                                    </div>
+                                    
+                                    <div class="w-1/2 mt-40">
+                                        <div>
+                                            <img src="./svgs/tableau_argent.svg" alt="Logoaregent">
+                                            <img src="./svgs/tableau_non.svg" alt="Logoaregent">
+                                            <img src="./svgs/tableau_ouinon.svg" alt="Logoaregent">
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                              
+                            
+                            
+                            
+                            
+                            <div class=" w-full h-auto flex justify-center">
+                                
+                                
+                                <div class="w-1/2 py-16 flex flex-col items-center">
+                                    <p class="text-white w-4/6 mt-8">
+                                        Nombre d’entreprises en valeur et par secteur ayant répondu que le web n’est pas pertinent avec leur métier 
+                                    </p>
+                                    <div class="w-5/6">
+                                        <img class="mt-8" src="/svgs/graph3frank.svg" alt="">
+                                    </div>
+                                    <p class="text-white w-4/6 mt-32">
+                                        Proportion en valeur des entreprises des secteurs “commerce, hébergement restauration, services spécialisés techniques (architectes, immobiliers...), nouvelles technologies - info - comm” pensant que leur site web a un bénéfice pour leur activité ou non.
+                                    </p>
+                                    <div class="w-4/6">
+                                        <img class="mt-16 w-96 h-auto" src="/svgs/graph2france.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="w-1/2 flex">
+                                    <div class="w-4/6 rounded-xl h-auto flex flex-col items-start gap-y-6 py-16">
+                                        
+                                        <div class="flex flex-col w-5/6">
+                                            <h2 class="text-3xl text-white">Les freins à la digitalisation, toujours fondés ? </h2>
+                                            <span class="h-2 w-40 bg-gradient-to-r from-green1 to-green2 mt-4 drop-shadow-xs"></span>
+                                        </div>
+                                        
+                                        <div class="w-6/6 h-auto">
+                                            <p class="text-white/60">
+                                                Nous nous intéressons ici aux freins qui empêchent les entreprises de passer le pas du numérique en nous questionnant sur le bien fondé de ces derniers.
+                                                Lorsqu’on se réfère au « Baromètre France Num. 2021 », nous nous apercevons que les freins principaux pour plus de la moitié des 881 interrogés (454) concernent l’impertinence du web avec leur secteur d’activité.
+                                                La statistique devient intéressante en regardant de plus près leurs secteurs d’activité et en rassemblant certains d’entre eux qui semblent instinctivement avoir des concurrent avec une présence en ligne.
+                                                On se rend alors compte que plus d’un cinquième des entreprises qui ne jugent pas pertinent leur évolution numériques sont pourtant dans les secteur suivants : commerce, hébergement restauration, services spécialisés techniques (architectes, immobiliers...), nouvelles technologies - info - comm.
+                                                
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <div class="w-5/6 h-auto mt-40">
+                                            <p class="text-white/60">
+                                                Notre instinct se confirme lorsque pour les entreprises des mêmes secteurs d’activité, on se réfère à la question des bienfaits d’internet. Sur 1107 réponses, 95% sont d’accord ou plutôt d’accord sur l’apport de bénéfices globaux à leurs organisations.
+                                                
+                                                Ce traitement de données confirme un peu plus une sensation bien installée depuis de nombreuses années. Énormément d’acteurs sont réticent à la transition numérique par méconnaissance de ce que cette dernière peut leur apporter: une image de marque développée, une communication plus rapide et efficace, un élargissement du marché potentiel ne se bridant pas à sa situation géographique.
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    <div class="mb-24" id="chartDiv" style="max-width: 740px;height: 400px;margin: 0px auto;"></div>
+                                    
+                                    
+                                    <script type="text/javascript">
+                                        /*
+                                        Area spline series type.
+                                        Learn how to:
+                                        
+                                        - Draw area spline chart.
+                                        */
+                                        // JS
+                                        fetch('csvjson.json')
+                                        .then(reponse => reponse.json())
+                                        .then(data => RecordData1(data))
+                                        .catch(error => console.log(error));
+                                        
+                                        function RecordData1(data){
+                                            
+                                            console.log(data[0]["Année"])
+                                        }
+                                        
+                                        function RecordData1(data){
+                                            
+                                            toNumber = (n) => parseFloat(n.replace(/,/, '.'))
+                                            
+                                            var chart = JSC.chart('chartDiv', {
+                                                debug: true,
+                                                legend_position: 'bottom right',
+                                                type: 'area spline',
+                                                defaultSeries: { shape_opacity: 0.5 },
+                                                xAxis: {
+                                                    crosshair_enabled: true,
+                                                    scale: { type: 'time' }
+                                                },
+                                                title_label_text: "Evolution du chiffre d'affaire du e-commerce par rapport au nombre de foyers qui n'ont pas internet",
+                                                yAxis: { formatString: 'p' },
+                                                series: [
+                                                {
+                                                    name: 'Non accés à internet',
+                                                    points: [
+                                                    [data[0]["Année"], toNumber(data[0]["Personne n'ayant pas accès internet"])],
+                                                    [data[1]["Année"], toNumber(data[1]["Personne n'ayant pas accès internet"])],
+                                                    [data[2]["Année"], toNumber(data[2]["Personne n'ayant pas accès internet"])],
+                                                    [data[3]["Année"], toNumber(data[3]["Personne n'ayant pas accès internet"])],
+                                                    [data[4]["Année"], toNumber(data[4]["Personne n'ayant pas accès internet"])],
+                                                    [data[5]["Année"], toNumber(data[5]["Personne n'ayant pas accès internet"])]
+                                                    ]
+                                                },
+                                                {
+                                                    name: 'CA e-commerce',
+                                                    points: [
+                                                    [data[0]["Année"], toNumber(data[0]["Evolution du CA du e-commerce"])],
+                                                    [data[1]["Année"], toNumber(data[1]["Evolution du CA du e-commerce"])],
+                                                    [data[2]["Année"], toNumber(data[2]["Evolution du CA du e-commerce"])],
+                                                    [data[3]["Année"], toNumber(data[3]["Evolution du CA du e-commerce"])],
+                                                    [data[4]["Année"], toNumber(data[4]["Evolution du CA du e-commerce"])],
+                                                    [data[5]["Année"], toNumber(data[5]["Evolution du CA du e-commerce"])]
+                                                    ]
+                                                },
+                                                
+                                                ]
+                                            });
+                                            
+                                            
+                                            
+                                        }
+                                    </script>
+                                </body>
+                                </html>
+                                
