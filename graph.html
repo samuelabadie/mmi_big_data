@@ -31,6 +31,9 @@ console.log(data[0]["Année"])
 }
 
 function RecordData1(data){
+
+      toNumber = (n) => parseFloat(n.replace(/,/, '.'))
+
       var chart = JSC.chart('chartDiv', {
         debug: true,
         legend_position: 'bottom right',
@@ -41,36 +44,38 @@ function RecordData1(data){
           scale: { type: 'time' }
         },
         title_label_text: 'Costs (Last 6 Months)',
-        yAxis: { formatString: 'c' },
+        yAxis: { formatString: 'p' },
         series: [
           {
-            name: 'Purchases',
+            name: 'Non accés à internet',
             points: [
-           ['1/1/2014', 14,36],
-              ['1/1/2015', 62900000000],
-              ['1/1/2016', 71500000000],
-              ['1/1/2017', 81700000000],
-              ['1/1/2018', 92600000000],
-              ['1/1/2019', 103400000000],
-              ['1/1/2020', 112200000000]
+              [data[0]["Année"], toNumber(data[0]["Personne n'ayant pas accès internet"])],
+              [data[1]["Année"], toNumber(data[1]["Personne n'ayant pas accès internet"])],
+              [data[2]["Année"], toNumber(data[2]["Personne n'ayant pas accès internet"])],
+              [data[3]["Année"], toNumber(data[3]["Personne n'ayant pas accès internet"])],
+              [data[4]["Année"], toNumber(data[4]["Personne n'ayant pas accès internet"])],
+              [data[5]["Année"], toNumber(data[5]["Personne n'ayant pas accès internet"])]
             ]
           },
           {
-            name: 'Taxes',
+            name: 'CA e-commerce',
             points: [
-            ['1/1/2014', 55000000000],
-              ['1/1/2015', 62900000000],
-              ['1/1/2016', 71500000000],
-              ['1/1/2017', 81700000000],
-              ['1/1/2018', 92600000000],
-              ['1/1/2019', 103400000000],
-              ['1/1/2020', 112200000000]
-
+              [data[0]["Année"], toNumber(data[0]["Evolution du CA du e-commerce"])],
+              [data[1]["Année"], toNumber(data[1]["Evolution du CA du e-commerce"])],
+              [data[2]["Année"], toNumber(data[2]["Evolution du CA du e-commerce"])],
+              [data[3]["Année"], toNumber(data[3]["Evolution du CA du e-commerce"])],
+              [data[4]["Année"], toNumber(data[4]["Evolution du CA du e-commerce"])],
+              [data[5]["Année"], toNumber(data[5]["Evolution du CA du e-commerce"])]
             ]
           },
+
         ]
       });
+
+
+
     }
     </script>
+
   </body>
 </html>

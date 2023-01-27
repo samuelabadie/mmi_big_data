@@ -3,7 +3,7 @@
     "Id": "1",
     "Année": "1/1/2015",
     "Evolution du CA du e-commerce": "14,36",
-    "Personne n'ayant pas accès internet": "97,85"
+    "Personne n'ayant pas accès internet": "99,85"
   },
   {
     "Id": "2",
@@ -14,31 +14,31 @@
   {
     "Id": "3",
     "Année": "1/1/2017",
-    "Evolution du CA du e-commerce": "48,55",
-    "Personne n'ayant pas accès internet": "95,70"
+    "Evolution du CA du e-commerce": "48,5",
+    "Personne n'ayant pas accès internet": "93,7"
   },
   {
     "Id": "4",
     "Année": "1/1/2018",
-    "Evolution du CA du e-commerce": "68,36",
-    "Personne n'ayant pas accès internet": "92,47"
+    "Evolution du CA du e-commerce": "68,3",
+    "Personne n'ayant pas accès internet": "92,4"
   },
   {
     "Id": "5",
     "Année": "1/1/2019",
-    "Evolution du CA du e-commerce": "88,00",
-    "Personne n'ayant pas accès internet": "92,47"
+    "Evolution du CA du e-commerce": "88,0",
+    "Personne n'ayant pas accès internet": "88,4"
   },
   {
     "Id": "6",
     "Année": "1/1/2020",
-    "Evolution du CA du e-commerce": "104,00",
-    "Personne n'ayant pas accès internet": "88,17"
+    "Evolution du CA du e-commerce": "104,0",
+    "Personne n'ayant pas accès internet": "80,1"
   },
   {
     "Id": "7",
-    "Année": "1/1/2021",
-    "Evolution du CA du e-commerce": "135,27",
-    "Personne n'ayant pas accès internet": "87,10"
+    "Année": "7/1/2021",
+    "Evolution du CA du e-commerce": "135,2",
+    "Personne n'ayant pas accès internet": "87,1"
   }
 ]
